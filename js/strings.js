@@ -43,3 +43,9 @@ console.log("Words count:", words.length);
 console.log("Words: ", words);
 
 console.log("Joined: ", words.join('-'));
+
+console.log(toUpper('Hello', "Vlad"));
+
+function toUpper(str, login) {
+    return str.toUpperCase() + login + "!";
+}
