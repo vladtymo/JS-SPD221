@@ -109,15 +109,12 @@ const product = {
     showPrice() {
         let price = 999; // ignored
         console.log(`Price: ${this.price}$`);
+        document.write(`<p>Price: ${this.price}$</p>`);
     }
 };
 
 // [this] - context-related keyword
 console.log("this in global scope:", this); // window object
-
-alert("Hello");
-// the same
-this.alert("Hello");
 
 product.showPrice();
 product.applyDiscount(15);
